@@ -8,6 +8,10 @@ interface LayoutProps {
 const RootLayout: FC<LayoutProps> = ({ children }) => {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body>{children}</body>
     </html>
   );

@@ -33,14 +33,14 @@ const Navbar: FC = () => {
           <div className="relative group">
             <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Registration</button>
             <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services?service=gst" className="block px-4 py-2 hover:bg-gray-200">GST</Link>
-              <Link href="/services?service=esi-pf" className="block px-4 py-2 hover:bg-gray-200">ESI & PF</Link>
-              <Link href="/services?service=ssi" className="block px-4 py-2 hover:bg-gray-200">SSI/MSME</Link>
-              <Link href="/services?service=rera" className="block px-4 py-2 hover:bg-gray-200">RERA</Link>
-              <Link href="/services?service=apeda" className="block px-4 py-2 hover:bg-gray-200">APEDA</Link>
-              <Link href="/services?service=ad-code" className="block px-4 py-2 hover:bg-gray-200">AD Code</Link>
-              <Link href="/services?service=bar-code" className="block px-4 py-2 hover:bg-gray-200">Bar Code</Link>
-              <Link href="/services?service=iec" className="block px-4 py-2 hover:bg-gray-200">IEC (Import Export Code)</Link>
+              <Link href="/services/GST" className="block px-4 py-2 hover:bg-gray-200">GST</Link>
+              <Link href="/services/esi&pf" className="block px-4 py-2 hover:bg-gray-200">ESI & PF</Link>
+              <Link href="/services/ssi" className="block px-4 py-2 hover:bg-gray-200">SSI/MSME</Link>
+              <Link href="/services/rera" className="block px-4 py-2 hover:bg-gray-200">RERA</Link>
+              <Link href="/services/apeda" className="block px-4 py-2 hover:bg-gray-200">APEDA</Link>
+              <Link href="/services/adcode" className="block px-4 py-2 hover:bg-gray-200">AD Code</Link>
+              <Link href="/services/barcode" className="block px-4 py-2 hover:bg-gray-200">Bar Code</Link>
+              <Link href="/services/iec" className="block px-4 py-2 hover:bg-gray-200">IEC (Import Export Code)</Link>
             </div>
           </div>
 
@@ -62,7 +62,7 @@ const Navbar: FC = () => {
           <div className="relative group">
             <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Licence</button>
             <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services?service=drug-licence" className="block px-4 py-2 hover:bg-gray-200">Drug Licence</Link>
+              <Link href="/services/drug-licence" className="block px-4 py-2 hover:bg-gray-200">Drug Licence</Link>
               <Link href="/services?service=food-licence" className="block px-4 py-2 hover:bg-gray-200">Food Licence (FSSAI) State & Central</Link>
               <Link href="/services?service=bis" className="block px-4 py-2 hover:bg-gray-200">BIS</Link>
             </div>
