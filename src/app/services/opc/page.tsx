@@ -1,9 +1,9 @@
 import ServiceLayout from '../ServiceLayout';
 
-const iec = () => {
+const opc = () => {
   return (
     <ServiceLayout>
-      <h1 className="text-3xl font-bold mb-4">IEC</h1>
+      <h1 className="text-3xl font-bold mb-4">One person company</h1>
       <p className="text-lg text-gray-700 mt-4">
         This page contains information on obtaining a Drug Licence, required documents, and guidelines.
       </p>
@@ -12,4 +12,4 @@ const iec = () => {
   );
 };
 
-export default iec;
+export default opc;

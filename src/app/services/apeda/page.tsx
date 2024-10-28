@@ -1,9 +1,15 @@
-const apeda = () => (
-    <div className="container mx-auto mt-20 px-4">
-      <h1 className="text-3xl font-bold">Apeda</h1>
-      <p className="mt-4">Details about Apeda registration and its benefits...</p>
-    </div>
+import ServiceLayout from '../ServiceLayout';
+
+const apeda = () => {
+  return (
+    <ServiceLayout>
+      <h1 className="text-3xl font-bold mb-4">Apeda</h1>
+      <p className="text-lg text-gray-700 mt-4">
+        This page contains information on obtaining a Drug Licence, required documents, and guidelines.
+      </p>
+      {/* Additional content for Drug Licence */}
+    </ServiceLayout>
   );
-  
-  export default apeda;
-  
+};
+
+export default apeda;

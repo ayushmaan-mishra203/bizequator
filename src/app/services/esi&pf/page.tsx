@@ -1,8 +1,15 @@
-const esipf = () => (
-    <div className="container mx-auto mt-20 px-4">
-      <h1 className="text-3xl font-bold">ESI & PF</h1>
-      <p className="mt-4">Details about ESI & PF and its benefits...</p>
-    </div>
+import ServiceLayout from '../ServiceLayout';
+
+const esipf = () => {
+  return (
+    <ServiceLayout>
+      <h1 className="text-3xl font-bold mb-4">ESI & PF</h1>
+      <p className="text-lg text-gray-700 mt-4">
+        This page contains information on obtaining a Drug Licence, required documents, and guidelines.
+      </p>
+      {/* Additional content for Drug Licence */}
+    </ServiceLayout>
   );
-  
-  export default esipf;
+};
+
+export default esipf;
