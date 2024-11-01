@@ -31,8 +31,8 @@ const Navbar: FC = () => {
         <div className={`flex-col md:flex md:flex-row ${isOpen ? 'flex' : 'hidden'} md:block`}>
           {/* Registration Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Registration</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">Registration</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">
               <Link href="/services/GST" className="block px-4 py-2 hover:bg-gray-200">GST</Link>
               <Link href="/services/esi&pf" className="block px-4 py-2 hover:bg-gray-200">ESI & PF</Link>
               <Link href="/services/ssi" className="block px-4 py-2 hover:bg-gray-200">SSI/MSME</Link>
@@ -46,8 +46,8 @@ const Navbar: FC = () => {
 
           {/* Certification Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Certification</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">Certification</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">
               <Link href="/services/iso-9001" className="block px-4 py-2 hover:bg-gray-200">ISO 9001:2015 (QMS)</Link>
               <Link href="/services/iso-14001" className="block px-4 py-2 hover:bg-gray-200">ISO 14001:2015 (EMS)</Link>
               <Link href="/services/iso-45001" className="block px-4 py-2 hover:bg-gray-200">ISO 45001 (OHSAS)</Link>
@@ -60,9 +60,8 @@ const Navbar: FC = () => {
 
           {/* Licence Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Licence</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services/drug-licence" className="block px-4 py-2 hover:bg-gray-200">Drug Licence</Link>
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">Licence</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">              <Link href="/services/drug-licence" className="block px-4 py-2 hover:bg-gray-200">Drug Licence</Link>
               <Link href="/services/food-licence" className="block px-4 py-2 hover:bg-gray-200">Food Licence (FSSAI) State & Central</Link>
               <Link href="/services/bis" className="block px-4 py-2 hover:bg-gray-200">BIS</Link>
             </div>
@@ -70,9 +69,8 @@ const Navbar: FC = () => {
 
           {/* Insurance Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Insurance</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services/health-insurance" className="block px-4 py-2 hover:bg-gray-200">Health Insurance</Link>
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">Insurance</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">              <Link href="/services/health-insurance" className="block px-4 py-2 hover:bg-gray-200">Health Insurance</Link>
               <Link href="/services/life-insurance" className="block px-4 py-2 hover:bg-gray-200">Life Insurance</Link>
               <Link href="/services/general-insurance" className="block px-4 py-2 hover:bg-gray-200">General Insurance</Link>
             </div>
@@ -80,18 +78,16 @@ const Navbar: FC = () => {
 
           {/* IPR Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">IPR</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services/trademark" className="block px-4 py-2 hover:bg-gray-200">Trademark</Link>
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">IPR</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">              <Link href="/services/trademark" className="block px-4 py-2 hover:bg-gray-200">Trademark</Link>
               <Link href="/services/copyright" className="block px-4 py-2 hover:bg-gray-200">Copyright</Link>
             </div>
           </div>
 
           {/* Start a Business Dropdown */}
           <div className="relative group">
-            <button className="px-8 py-4 hover:text-gray-400 focus:outline-none">Start a Business</button>
-            <div className="absolute left-0 mt-1 w-48 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto">
-              <Link href="/services/partnership" className="block px-4 py-2 hover:bg-gray-200">Partnership</Link>
+            <button className="px-8 py-6 hover:text-gray-400 focus:outline-none">Start a Business</button>
+            <div className="absolute left-0 mt-1 w-56 bg-white text-black shadow-lg rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">              <Link href="/services/partnership" className="block px-4 py-2 hover:bg-gray-200">Partnership</Link>
               <Link href="/services/pvt-limited" className="block px-4 py-2 hover:bg-gray-200">Pvt Limited</Link>
               <Link href="/services/llp-registration" className="block px-4 py-2 hover:bg-gray-200">LLP Registration</Link>
               <Link href="/services/nidhi-company" className="block px-4 py-2 hover:bg-gray-200">Nidhi Company</Link>

@@ -3,9 +3,15 @@ import Footer from '@/components/Footer';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-100"> {/* Set the main background color here */}
+    <div className="min-h-screen flex flex-col bg-gray-100"> {/* Main background color */}
       {/* Navbar */}
       <Navbar />
+
+      {/* Hero Section */}
+      <section className="relative h-screen bg-cover bg-center " style={{ backgroundImage: "url('/images/hero.png')" }}>
+      
+       
+      </section>
 
       {/* Main Content */}
       <main className="flex-grow">
@@ -35,4 +41,3 @@ const HomePage = () => {
 };
 
 export default HomePage;
-
