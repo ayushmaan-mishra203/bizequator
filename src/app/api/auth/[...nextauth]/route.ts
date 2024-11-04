@@ -20,6 +20,15 @@ export const authOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+      // Here, you can define how to handle the user's profile
+      profile(profile) {
+        return {
+          id: profile.sub, // Use 'sub' for the user's ID
+          name: profile.name,
+          email: profile.email,
+          image: profile.picture, // Ensure the profile image is retrieved
+        };
+      },
     }),
     // Add other providers as needed
   ],
@@ -30,11 +39,13 @@ export const authOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id; // Attach user id to token
+        token.image = user.image; // Attach user image to token (if needed)
       }
       return token;
     },
     async session({ session, token }) {
       session.user.id = token.id; // Attach user id to session
+      session.user.image = token.image; // Attach user image to session
       return session;
     }
   },

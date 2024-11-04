@@ -13,14 +13,14 @@ const Navbar: FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-gray-800 text-white p-2 fixed top-0 w-full z-50">
+    <nav className="bg-gray-800 text-white p-1 fixed top-0 w-full z-20">
       <div className="container mx-auto flex justify-between items-center">
         {/* Company Logo */}
         <Link href="/" className="flex items-center">
           <img 
             src="/images/logo.png" // Always use the company logo
             alt="Company Logo"
-            className="h-28 mr-2"
+            className="h-20 mr-1"
           />
         </Link>
 
