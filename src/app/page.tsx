@@ -14,9 +14,20 @@ const HomePage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative h-[80vh] bg-cover bg-center" style={{ backgroundImage: "url('/images/hero.png')" }}>
-        {/* You can add hero content here if desired */}
+      <section className="relative w-full h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh]">
+        {/* Background Image for Desktop (with reduced opacity) */}
+        <div className="absolute inset-0 bg-cover bg-center opacity-1 lg:block hidden transition-all duration-500 ease-in-out" style={{ backgroundImage: "url('/images/hero.png')" }}></div>
+
+        {/* Main Hero Image */}
+        <img
+          src="/images/hero.png"
+          alt="Hero Image"
+          className="w-full h-full object-contain object-center transition-all duration-500 ease-in-out"
+        />
       </section>
+
+      {/* Horizontal Line Between Hero and About Section */}
+      <div className="border-t border-gray-300 my-8"></div>
 
       {/* About Section */}
       <AboutSection />
@@ -26,109 +37,29 @@ const HomePage = () => {
         <section className="text-center">
           <h2 className="text-3xl font-bold mb-10">Our Services</h2>
           <div className="mt-10 flex flex-wrap justify-center gap-6">
-            {/* Service Card 1 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/gst.png" alt="GST Registration" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">GST Registration</h3>
-              <p className="mt-2">Register for GST and ensure compliance with tax regulations.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/gst')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 2 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/Drug licence.png" alt="Drug License" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Drug License</h3>
-              <p className="mt-2">Obtain a drug license for your business.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/drug-license')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 3 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/trademark.png" alt="Trademark Registration" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Trademark Registration</h3>
-              <p className="mt-2">Protect your brand with a registered trademark.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/trademark')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 4 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/company-registration.jpg" alt="Pvt Limited Company Registration" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Pvt Limited Company Registration</h3>
-              <p className="mt-2">Officially register your company and start your business.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/pvt-limited')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 5 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/iec-services.jpg" alt="Import/Export Services" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Import/Export Services</h3>
-              <p className="mt-2">Facilitate your international trade with our assistance.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/iec')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 6 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/food-licence.png" alt="Accounting Services" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Food licence</h3>
-              <p className="mt-2">Get FSSAI food licence for your company.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/food-licence')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 7 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/copyright.jpg" alt="Tax Advisory" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">Copyright</h3>
-              <p className="mt-2">Protect your brand with a registered copyright.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/copyright')}
-              >
-                Learn More
-              </button>
-            </div>
-
-            {/* Service Card 8 */}
-            <div className="bg-white p-6 rounded-lg shadow-lg w-80 transition-transform transform hover:scale-105">
-              <img src="/images/LLP.jpg" alt="Business Planning" className="h-32 w-full object-cover rounded-t-lg" />
-              <h3 className="text-xl font-semibold mt-4">LLP Registrion</h3>
-              <p className="mt-2">Start a new LLP company with registration.</p>
-              <button
-                className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
-                onClick={() => router.push('/services/llp-registration')}
-              >
-                Learn More
-              </button>
-            </div>
+            {/* Service Cards */}
+            {[
+              { title: 'GST Registration', image: '/images/gst.png', description: 'Register for GST and ensure compliance with tax regulations.', link: '/services/GST' },
+              { title: 'Drug License', image: '/images/Drug licence.png', description: 'Obtain a drug license for your business.', link: '/services/drug-licence' },
+              { title: 'Trademark Registration', image: '/images/trademark.png', description: 'Protect your brand with a registered trademark.', link: '/services/trademark' },
+              { title: 'Pvt Limited Company Registration', image: '/images/company-registration.jpg', description: 'Officially register your company and start your business.', link: '/services/pvt-limited' },
+              { title: 'Import/Export Services', image: '/images/iec-services.jpg', description: 'Facilitate your international trade with our assistance.', link: '/services/iec' },
+              { title: 'Food Licence', image: '/images/food-licence.png', description: 'Get FSSAI food licence for your company.', link: '/services/food-licence' },
+              { title: 'Copyright', image: '/images/copyright.jpg', description: 'Protect your brand with a registered copyright.', link: '/services/copyright' },
+              { title: 'LLP Registration', image: '/images/LLP.jpg', description: 'Start a new LLP company with registration.', link: '/services/llp-registration' },
+            ].map((service, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg w-full sm:w-80 transition-transform transform hover:scale-105">
+                <img src={service.image} alt={service.title} className="h-32 w-full object-cover rounded-t-lg" />
+                <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
+                <p className="mt-2">{service.description}</p>
+                <button
+                  className="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
+                  onClick={() => router.push(service.link)}
+                >
+                  Learn More
+                </button>
+              </div>
+            ))}
           </div>
         </section>
       </main>
