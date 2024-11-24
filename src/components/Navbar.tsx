@@ -103,7 +103,10 @@ const Navbar: FC = () => {
               <Link href="/services/pvt-limited" className="block px-4 py-2 hover:bg-gray-200">Pvt Limited</Link>
               <Link href="/services/llp-registration" className="block px-4 py-2 hover:bg-gray-200">LLP Registration</Link>
               <Link href="/services/nidhi-company" className="block px-4 py-2 hover:bg-gray-200">Nidhi Company</Link>
-              <Link href="/services/producer-company" className="block px-4 py-2 hover:bg-gray-200">Producer Company</Link>
+              <Link href="/services/opc" className="block px-4 py-2 hover:bg-gray-200">One person company</Link>
+              <Link href="/services/section-8" className="block px-4 py-2 hover:bg-gray-200">Section 8 company</Link>
+              <Link href="/services/trust-ngo" className="block px-4 py-2 hover:bg-gray-200">Trust/NGO</Link>
+              <Link href="/services/12a-80g" className="block px-4 py-2 hover:bg-gray-200">12A & 80G</Link>
             </div>
           </div>
 

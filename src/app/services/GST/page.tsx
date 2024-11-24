@@ -199,16 +199,26 @@ const GSTRegistrationPage = () => {
 
           {/* Contact Section */}
           <section className="text-center bg-gray-100 p-6 rounded-lg shadow-md">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Need Assistance?
-            </h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Need Assistance?</h2>
             <p className="text-lg text-gray-700 mb-6">
-              If you prefer to speak with us directly, feel free to call us for
-              assistance.
+              If you prefer to speak with us directly, feel free to call or request a callback.
             </p>
-            <p className="text-xl font-semibold text-blue-600">
-              Call us at: <a href="tel:+919999576641" className="underline">+91 12345 67890</a>
-            </p>
+            <div className="flex justify-center space-x-4">
+              {/* Call Now Button */}
+              <a
+                href="tel:+919999576641"
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
+              >
+                Call Now
+              </a>
+              {/* Request Callback Button */}
+              <a
+                href="mailto:info@bizequator.com?subject=Request Callback&body=Please call me back regarding GST registration."
+                className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 transition"
+              >
+                Request Callback
+              </a>
+            </div>
           </section>
         </div>
       </main>

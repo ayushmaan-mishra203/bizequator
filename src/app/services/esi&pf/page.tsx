@@ -55,28 +55,29 @@ const ESIPFRegistrationPage = () => {
           </ul>
         </section>
 
-        {/* Contact Section */}
-        <section>
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
-          <p className="text-gray-700 mb-4">
-            For assistance with ESI & PF registration or inquiries, feel free to reach out to us.
-          </p>
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-lg font-semibold">Phone Numbers:</p>
-            <a
-              href="tel:+918130029971"
-              className="text-blue-600 hover:underline text-xl font-bold block"
-            >
-              +91 81300 29971
-            </a>
-            <a
-              href="tel:+919999576641"
-              className="text-blue-600 hover:underline text-xl font-bold block"
-            >
-              +91 99995 76641
-            </a>
-          </div>
-        </section>
+          {/* Contact Section */}
+          <section className="text-center bg-gray-100 p-6 rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Need Assistance?</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              If you prefer to speak with us directly, feel free to call or request a callback.
+            </p>
+            <div className="flex justify-center space-x-4">
+              {/* Call Now Button */}
+              <a
+                href="tel:+919999576641"
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
+              >
+                Call Now
+              </a>
+              {/* Request Callback Button */}
+              <a
+                href="mailto:info@bizequator.com?subject=Request Callback&body=Please call me back regarding GST registration."
+                className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 transition"
+              >
+                Request Callback
+              </a>
+            </div>
+          </section>
       </main>
 
       {/* Footer */}

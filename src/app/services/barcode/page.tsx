@@ -41,20 +41,27 @@ const BarcodeRegistrationPage = () => {
             </ul>
           </section>
 
-          <section className="mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Contact Us for Barcode Registration</h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              For help with your barcode registration process, our experts are ready to assist you in obtaining the necessary barcodes
-              for your products.
+          {/* Contact Section */}
+          <section className="text-center bg-gray-100 p-6 rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Need Assistance?</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              If you prefer to speak with us directly, feel free to call or request a callback.
             </p>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold text-gray-800 mb-4">Call Us</h3>
-              <p className="text-gray-700 mb-2">
-                📞 <a href="tel:+918130029971" className="text-blue-600 hover:underline">+91 81300 29971</a>
-              </p>
-              <p className="text-gray-700">
-                📞 <a href="tel:+919999576641" className="text-blue-600 hover:underline">+91 99995 76641</a>
-              </p>
+            <div className="flex justify-center space-x-4">
+              {/* Call Now Button */}
+              <a
+                href="tel:+919999576641"
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
+              >
+                Call Now
+              </a>
+              {/* Request Callback Button */}
+              <a
+                href="mailto:info@bizequator.com?subject=Request Callback&body=Please call me back regarding GST registration."
+                className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 transition"
+              >
+                Request Callback
+              </a>
             </div>
           </section>
         </div>

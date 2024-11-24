@@ -79,30 +79,27 @@ const SSIMSMERegistrationPage = () => {
             </ul>
           </section>
 
-          <section>
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">
-              Get Assistance for SSI/MSME Registration
-            </h2>
-            <p className="text-gray-700 leading-relaxed mb-4">
-              Contact us at the numbers below for guidance and support with the
-              SSI/MSME registration process.
+          {/* Contact Section */}
+          <section className="text-center bg-gray-100 p-6 rounded-lg shadow-md">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Need Assistance?</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              If you prefer to speak with us directly, feel free to call or request a callback.
             </p>
-            <div className="bg-blue-100 border-l-4 border-blue-500 text-blue-700 p-4 rounded-md shadow-md">
-              <p>
-                <strong>Phone Numbers:</strong>
-              </p>
-              <ul className="list-disc list-inside mt-2">
-                <li>
-                  <a href="tel:+918130029971" className="text-blue-600">
-                    +91 8130029971
-                  </a>
-                </li>
-                <li>
-                  <a href="tel:+919999576641" className="text-blue-600">
-                    +91 99995 76641
-                  </a>
-                </li>
-              </ul>
+            <div className="flex justify-center space-x-4">
+              {/* Call Now Button */}
+              <a
+                href="tel:+919999576641"
+                className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-500 transition"
+              >
+                Call Now
+              </a>
+              {/* Request Callback Button */}
+              <a
+                href="mailto:info@bizequator.com?subject=Request Callback&body=Please call me back regarding GST registration."
+                className="bg-green-600 text-white py-2 px-4 rounded hover:bg-green-500 transition"
+              >
+                Request Callback
+              </a>
             </div>
           </section>
         </div>
