@@ -6,6 +6,7 @@ import { signIn, useSession, signOut } from 'next-auth/react'; // Import signIn 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
+
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { data: session } = useSession(); // Access session data
